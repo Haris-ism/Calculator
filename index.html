@@ -12,6 +12,7 @@
       background-color:#333333;
     }
     .calculator{
+      /* using "calculator" class to locate each button using flex wrap */
       width:320px;
       background-color:#4a4a4a;
       display:flex;
@@ -28,11 +29,13 @@
       font-size: 20px;
     }
     .display{
+      /* LCD */
       width:300px;
       border-radius:10px;
       font-size: 30px;
     }
     [value="C"]{
+      /* Clear Button */
       width:230px;
       border-radius:10px;
     }
@@ -41,14 +44,10 @@
       border-radius:10px;
     }
   </style>
-  <script
-	  src="https://code.jquery.com/jquery-3.6.0.min.js"
-	  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-	  crossorigin="anonymous">
-  </script>
 </head>
 <body>
-  <div class="calculator">
+
+  <div class="calculator"> <!-- using "calculator" class to locate each button using flex wrap -->
     <input class="display" type="text" name="Display">
     <input class="clear" type="button" value="C">
     <input class="calculation" item="operator" type="button" value="*">
@@ -67,6 +66,11 @@
     <input class="calculation" item="operator" type="button" value="0">
     <input class="equals" type="button" value="=">
   </div>
+  <script
+	  src="https://code.jquery.com/jquery-3.6.0.min.js"
+	  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+	  crossorigin="anonymous">
+  </script>
   <script src="./calculator.js"></script>
 </body>
 </html>
