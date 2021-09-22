@@ -1,0 +1,36 @@
+@import '_mixin';
+$primaryColor:#333333;
+$secondaryColor:#4a4a4a;
+body{
+    @include flex(center);
+    background-color:$primaryColor;
+  
+  .calculator{
+    @include flex(center,wrap);
+    width:320px;
+    background-color:$secondaryColor;
+    border-radius:10px;
+  }
+  input{
+    width:70px;
+    height:70px;
+    margin:5px;
+    border-radius:50%;
+    background-color: transparent;
+    color:white;
+    font-size: 20px;
+  }
+  .display{
+    width:300px;
+    border-radius:10px;
+    font-size: 30px;
+  }
+  [value="C"]{
+    width:230px;
+    border-radius:10px;
+  }
+  [value="0"]{
+    width:230px;
+    border-radius:10px;
+  }
+}
